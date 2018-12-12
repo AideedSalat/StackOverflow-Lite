@@ -157,7 +157,8 @@ containers
 
 input[type=text],
 input[type=password],
-input[type=email] {
+input[type=email],
+input[type=number] {
     width: 30%;
     padding: 12px;
     margin: 10px 0 22px 0;
@@ -204,13 +205,24 @@ hr {
     }
     input[type=text] {
         padding: 8px;
-    }
+	}
+	
     p {
         font-size: 22px;
-    }
+	}
+	
     .registerbtn {
         width: 30%;
         margin: 10px 30% 10px 11%;
-    }
+	}
 }
 
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: rgb(31, 30, 30);
+	color: white;
+	text-align: center;
+ }
