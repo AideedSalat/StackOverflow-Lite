@@ -1,0 +1,207 @@
+/*
+------
+Navbar
+------
+*/
+.header {
+    height: 53px;
+}
+
+.myNavbar{
+	width: 100%;
+}
+.myNavbar ul.myNav {
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+    position: fixed;
+    background-color: #FAFAFA;
+    padding: 0;
+    height: 53px;
+    overflow: hidden;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.myNavbar ul.myNav li {
+    float: left;
+}
+
+.myNavbar ul.myNav li a {
+    display: block;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+}
+
+.myNavbar ul.myNav li a:hover:not(.active) {
+    background-color: none;
+    color: #ABB2B9;
+}
+
+.myNavbar ul.myNav li a.active {
+    background-color: #4CAF50;
+}
+
+.myNavbar ul.myNav li.right {
+    float: right;
+}
+
+
+.content {
+    margin-left: 15%;
+    padding: 1px 16px;
+    height: 100%;
+    width: 85%;
+}
+
+#signup {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.signin {
+    background-color: #f1f1f17c;
+    text-align: center;
+}
+
+button.registerbtn {
+    background-color: rgb(98, 88, 235);
+    color: white;
+    padding: 16px 20px;
+    border-radius: 5px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+a {
+    color: dodgerblue;
+}
+
+/
+
+.dropdown-container {
+    display: none;
+    width: 100%;
+    background-color: #212F3D;
+}
+
+.dropdown-container li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.736);
+    display: block;
+    border: none;
+    background-color: #212F3D;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: 0;
+    padding: 8px 16px;
+}
+
+.dropdown-container li a:hover {
+    background-color: #34495E;
+}
+
+@media screen and (max-width: 900px) {
+    .dropdown-container li a {
+        float: none;
+        padding: 15px;
+        outline: 0;
+        width: 100%;
+    }
+    .dropdown-container li a:hover {
+        background-color: none;
+    }
+}
+
+
+/* 
+-------------
+containers
+-----------
+*/
+
+.my-container-fluid {
+    width: 100%;
+    margin: auto;
+}
+
+.my-container {
+    width: 80%;
+    margin: auto;
+}
+
+@media screen and (max-width: 900px) {
+    .my-container-fluid {
+        width: 100%;
+        margin: auto;
+    }
+    .my-container {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+/* form input */
+
+input[type=text],
+input[type=password],
+input[type=email] {
+    width: 50%;
+    padding: 12px;
+    margin: 10px 0 22px 0;
+    border-radius: 5px;
+    border: 1px solid #80808049;
+    background: white;
+}
+
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=password]:focus {
+    background-color: white;
+    outline: none;
+    border: 1.5px solid #7ac9b7;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+}
+
+@media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    input[type=submit] {
+        padding: 4px;
+        font-size: 12px;
+    }
+    input[type=text] {
+        padding: 8px;
+    }
+    p {
+        font-size: 22px;
+    }
+    .registerbtn {
+        width: 50%;
+        margin: 10px 30% 10px 11%;
+    }
+}
+
